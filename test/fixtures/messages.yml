@@ -1,0 +1,24 @@
+# Three messages belonging to the from_desktop conversation, with explicit
+# created_at timestamps (fixtures don't auto-populate timestamps the way a
+# real save would) so tests can rely on their order when checking that
+# Conversation#recent_history comes back oldest-first.
+first_user_turn:
+  conversation: from_desktop
+  role: user
+  content: "Computer, what time is it?"
+  created_at: <%= 3.minutes.ago %>
+  updated_at: <%= 3.minutes.ago %>
+
+first_assistant_turn:
+  conversation: from_desktop
+  role: assistant
+  content: "RESPONSE: It is 1400 hours, Captain.\n\nACTIONS:"
+  created_at: <%= 2.minutes.ago %>
+  updated_at: <%= 2.minutes.ago %>
+
+second_user_turn:
+  conversation: from_desktop
+  role: user
+  content: "Computer, open a web search for Ruby on Rails."
+  created_at: <%= 1.minute.ago %>
+  updated_at: <%= 1.minute.ago %>

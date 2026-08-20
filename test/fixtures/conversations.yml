@@ -1,0 +1,8 @@
+# Two small seed conversations that model tests and controller tests can
+# reference by name (conversations(:from_desktop), conversations(:from_ios))
+# instead of every test having to create its own from scratch.
+from_desktop:
+  client_label: desktop
+
+from_ios:
+  client_label: ios
