@@ -37,7 +37,7 @@ gem "image_processing", "~> 1.2"
 
 # Anthropic's own Ruby gem — this is what actually talks to the Claude API for us,
 # so we don't have to hand-build the HTTP request ourselves.
-gem "anthropic", "~> 1.65"
+gem "anthropic", "~> 1.78"
 
 # Loads ANTHROPIC_API_KEY (and anything else in .env) into ENV when running locally.
 # In production, real environment variables set on the host take over instead —
